@@ -22,8 +22,8 @@ const capabilities = {
 const modifyCapabilities = (configName, testName) => {
   let config = configName.split('@lambdatest')[0]
   let [browserName, browserVersion] = config.split(':')
-  capabilities.browserName = browserName ? browserName : capabilities.browserName
-  capabilities.browserVersion = browserVersion ? browserVersion : capabilities.browserVersion
+  // capabilities.browserName = browserName ? browserName : capabilities.browserName
+  // capabilities.browserVersion = browserVersion ? browserVersion : capabilities.browserVersion
   // capabilities['LT:Options']['platform'] = platform ? platform : capabilities['LT:Options']['platform']
   capabilities['LT:Options']['name'] = testName
 }
