@@ -4,15 +4,15 @@ const { chromium } = require('playwright')
 
 // LambdaTest capabilities
 const capabilities = {
-  'browserName': 'Chrome', // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
-  'browserVersion': 'latest',
+  'browserName': 'MicrosoftEdge', // Browsers allowed: `Chrome`, `MicrosoftEdge`, `pw-chromium`, `pw-firefox` and `pw-webkit`
+  'browserVersion': 'canary',
   'LT:Options': {
     'platform': process.env.HYPEREXECUTE_PLATFORM,
     'build': 'Playwright HyperExecute Build',
     'name': 'Playwright HyperExecute Test',
     'user': process.env.LT_USERNAME,
     'accessKey': process.env.LT_ACCESS_KEY,
-    // 'network': true,
+    'network': true,
     'video': true,
     'console': true
   }
