@@ -11,7 +11,7 @@ test.describe('Browse LambdaTest in different search engines 2', () => {
     await page.click('text=Get Started');
     await expect(page.locator('text=Installation').first()).toBeVisible();
     await page.click('text=Trace Viewer');
-    await page.click('text=Test Generator');
+    await page.click('text=Test Generato'); //text=Test Generator
     await page.click('text=Release notes');
     await page.click('text=Annotations');
     await page.click('text=API testing');
